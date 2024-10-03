@@ -1,0 +1,15 @@
+﻿<Window x:Class="NotificationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Notification System" Height="300" Width="264">
+    <Grid>
+        <Label Content="Введите данные:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox Name="InputTextBox" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+
+        <Button Name="MessageButton" Content="Отправить сообщение" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" Click="MessageButton_Click"/>
+        <Button Name="CallButton" Content="Принять звонок" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,120,0,0" Click="CallButton_Click"/>
+        <Button Name="EmailButton" Content="Отправить e-mail" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0" Click="EmailButton_Click"/>
+
+        <TextBlock Name="ResultTextBlock" Width="360" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,200,0,0" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
